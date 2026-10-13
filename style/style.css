@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    font-family: "Roboto", sans-serif;
+}
+
+header, .content:first-of-type, footer {
+background-color: #1F2937;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 10vw;
+}
+
+header {
+    color: #F9FAF8;
+}
+
+header > *:first-child {
+    font-size: 24px;
+}
+
+header > div span {
+    font-size: 18px;
+    color: #E5E7EB
+}
+
+header > div {
+    display: flex;
+    gap: 2vw;
+}

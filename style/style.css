@@ -73,3 +73,48 @@ button {
     font-size: 18px;
     color: #F9FAF8;
 }
+
+.content:nth-of-type(2) {
+    flex-direction: column;
+    width: 100%;
+    padding: 5vh 20vw;
+    gap: 5vh;
+}
+
+.content:nth-of-type(2) > div{
+    gap: 5vw;
+}
+
+.content:nth-of-type(2) > div > div{
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.content:nth-of-type(2) > div > div > div{
+    height: auto;        
+    aspect-ratio: 1 / 1;
+    border: #3882F6 solid 5px;
+    border-radius: 20px;
+}
+
+.content:nth-of-type(2), .content:nth-of-type(2) > div, .content:nth-of-type(2) > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content:nth-of-type(2) > div > div > *{
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    color: #6D747D;
+}
+
+h2 {
+    font-size: 36px;
+    color: #1F2937;
+}
+
+h2 {
+    font-weight: 900;
+}

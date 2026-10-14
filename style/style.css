@@ -25,7 +25,7 @@ header > *:first-child {
     font-size: 24px;
 }
 
-header > div span {
+header > div span, .content:first-of-type > div > p{
     font-size: 18px;
     color: #E5E7EB
 }
@@ -33,4 +33,43 @@ header > div span {
 header > div {
     display: flex;
     gap: 2vw;
+}
+
+.content:first-of-type {
+    display: flex;
+    padding: 10vh 10vw 15vh;
+    justify-content: space-between;
+}
+
+.content:first-of-type > *{
+    flex-basis: 40%;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.content:first-of-type > *:last-child{
+    align-self: flex-start;
+    background-color: #6D747D;
+    padding: 9% 10%;
+    text-align: center;
+}
+
+button {
+    background-color: #3882F6;
+    padding: 1vh 2.5vw;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1vh;
+    font-weight: bold;
+}
+
+
+.content:first-of-type > *:last-child, button {
+    font-size: 18px;
+    color: #F9FAF8;
 }

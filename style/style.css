@@ -11,7 +11,7 @@ background-color: #1F2937;
 }
 
 
-header {
+header, footer {
     display: flex;
     justify-content: space-between;
     padding: 3vh 15vw;
@@ -68,7 +68,7 @@ button {
 }
 
 
-.content:first-of-type > *:last-child, .content:last-of-type *, button {
+.content:first-of-type > *:last-child, .content:last-of-type *, button, footer {
     font-size: 18px;
     color: #F9FAF8;
 }
@@ -162,4 +162,8 @@ button, .content:last-of-type  {
 
 .content:first-of-type button{
     border: none;
+}
+
+footer {
+    justify-content: center;
 }

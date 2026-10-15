@@ -14,14 +14,14 @@ background-color: #1F2937;
 header {
     display: flex;
     justify-content: space-between;
-    padding: 3vh 10vw;
+    padding: 3vh 15vw;
 }
 
 header {
     color: #F9FAF8;
 }
 
-header > *:first-child {
+header > *:first-child, .content:nth-of-type(3) p:last-child {
     font-size: 24px;
 }
 
@@ -37,7 +37,7 @@ header > div {
 
 .content:first-of-type {
     display: flex;
-    padding: 10vh 10vw 15vh;
+    padding: 10vh 15vw 15vh;
     justify-content: space-between;
 }
 
@@ -55,34 +55,33 @@ h1 {
 .content:first-of-type > *:last-child{
     align-self: flex-start;
     background-color: #6D747D;
-    padding: 9% 10%;
+    padding: 10% 7%;
     text-align: center;
 }
 
 button {
-    background-color: #3882F6;
     padding: 1vh 2.5vw;
-    border: none;
     border-radius: 10px;
     margin-top: 1vh;
     font-weight: bold;
+    border: 2px solid white;
 }
 
 
-.content:first-of-type > *:last-child, button {
+.content:first-of-type > *:last-child, .content:last-of-type *, button {
     font-size: 18px;
     color: #F9FAF8;
 }
 
-.content:nth-of-type(2) {
+.content:nth-of-type(2), .content:nth-of-type(3) {
     flex-direction: column;
     width: 100%;
-    padding: 5vh 20vw;
+    padding: 5vh 25vw;
     gap: 5vh;
 }
 
 .content:nth-of-type(2) > div{
-    gap: 5vw;
+    gap: 4vw;
 }
 
 .content:nth-of-type(2) > div > div{
@@ -97,24 +96,70 @@ button {
     border-radius: 20px;
 }
 
-.content:nth-of-type(2), .content:nth-of-type(2) > div, .content:nth-of-type(2) > div > div {
+.content, .content:nth-of-type(2) > div, .content:nth-of-type(2) > div > div{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .content:nth-of-type(2) > div > div > *{
-    width: 200px;
+    width: 170px;
     text-align: center;
     font-size: 18px;
     color: #6D747D;
 }
 
-h2 {
+h2, .content:nth-of-type(3) > p:first-child {
     font-size: 36px;
     color: #1F2937;
 }
 
-h2 {
+h2, .content:nth-of-type(3) > p:last-child  {
     font-weight: 900;
+}
+
+.content:nth-of-type(3) > p:last-child  {
+    align-self: flex-end;
+    padding-right: 5vw;
+}
+
+.content:nth-of-type(3) {
+    background-color: #E5E7EB;
+    padding: 20vh 20vw;
+    display: flex;
+}
+
+.content:nth-of-type(3) > p:first-child {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.content:nth-of-type(2)  p{
+   padding-bottom: 10vh;
+}
+
+.content {
+    display: flex;
+}
+
+.content:last-of-type div{
+    display: flex;
+    flex-direction: column;
+}
+
+.content:last-of-type {
+    margin: 10vh 15vw;
+    padding: 5vh 0;
+    justify-content: space-around;
+    background-color: #3882F6;
+    border-radius: 20px;
+}
+
+
+button, .content:last-of-type  {
+    background-color: #3882F6;
+}
+
+.content:first-of-type button{
+    border: none;
 }
